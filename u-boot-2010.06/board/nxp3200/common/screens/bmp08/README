@@ -1,0 +1,8 @@
+This directory contains the screens used in U-Boot.
+
+The program tools/bin_header.c converts the screen into the header
+file 'include/screens.h'.  The list of screens to convert is in
+the tools/Makefile; search for the SCREENS variable define.
+Note that the FileName becomes the character array name with '_'
+substituted for non-alphanumberic characters to form a valid
+C language file array.  So 'Logo.bmp' becomes 'Logo_bmp'
