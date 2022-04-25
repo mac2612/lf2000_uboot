@@ -83,7 +83,7 @@ ENDPROC(__raw_readsl)
  * r1: fill value  (32 bits)
  * r2: number of 4-byte values to store (assumed to be > 0 and a multiple of 4)
  * Enabled */
-ENTRY(__asm_memset)
+ENTRY(asm_memset)
 		teq	r2, #0		@ do we have to check for the zero len?
 		moveq	pc, lr
 
@@ -99,7 +99,7 @@ ENTRY(__asm_memset)
 		ldmfd	sp!, {r4, ip}
 2:		mov	pc, lr
 
-ENDPROC(__asm_memset)
+ENDPROC(asm_memset)
 /* enabled */
 
 
