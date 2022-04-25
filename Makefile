@@ -3378,7 +3378,7 @@ nxp3200_rio_config: unconfig
 	@$(MKCONFIG) $(@:_config=) arm armv7   generic nxp3200 nxp3200
 
 nxp3200_rio_delay_config: unconfig
-        @$(MKCONFIG) $(@:_config=) arm armv7   generic nxp3200 nxp3200
+	@$(MKCONFIG) $(@:_config=) arm armv7   generic nxp3200 nxp3200
 
 nxp3200_rio_800_480_config: unconfig
 	@$(MKCONFIG) $(@:_config=) arm armv7   generic nxp3200 nxp3200
